@@ -1,3 +1,32 @@
+
+
+1、修改build/config.js 中的 element-ui 为 '@yeylcom/element-ui'
+
+2、修改 .babelrc 中的 alias 改为
+```
+ "alias": {
+    "element-ui/src": "@yeylcom/element-ui/lib"
+  }
+```
+3、修改src 目录下的所有 element-ui/ 打头的路径 换成 相对路径
+
+4、修改package.json中的版本号version 和 name
+
+5、执行语句
+npm run deploy:build
+npm run dist
+npm publish
+
+6、在需要的项目里执行
+```
+npm install @yeylcom/element-ui
+```
+
+7、将需要的项目中的main.js中的element替换
+```
+import Element from 'element-ui'; ----> import Element from '@yeylcom/element-ui';
+```
+
 <p align="center">
   <img src="https://cdn.rawgit.com/ElemeFE/element/dev/element_logo.svg">
 </p>
