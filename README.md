@@ -1,12 +1,15 @@
 
 # 基于element-ui 改为自己的组件库
 
-1、修改build/config.js 中的 element-ui 为 '@yeylcom/element-ui'
+element-ui 版本库为: dev:2.14.1
+
+
+1、修改build/config.js 中的 element-ui 为 '@sh/element-ui'
 
 2、修改 .babelrc 中的 alias 改为
 ```
  "alias": {
-    "element-ui/src": "@yeylcom/element-ui/lib"
+    "element-ui/src": "@sh/element-ui/lib"
   }
 ```
 3、修改src 目录下的所有 element-ui/ 打头的路径 换成 相对路径
@@ -21,12 +24,12 @@ npm publish
 
 6、在需要的项目里执行
 ```
-npm install @yeylcom/element-ui
+npm install @sh/element-ui
 ```
 
 7、将需要的项目中的main.js中的element替换
 ```
-import Element from 'element-ui'; ----> import Element from '@yeylcom/element-ui';
+import Element from 'element-ui'; ----> import Element from '@sh/element-ui';
 ```
 
 <p align="center">
