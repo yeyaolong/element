@@ -1,5 +1,8 @@
-import fecha from 'element-ui/src/utils/date';
-import { t } from 'element-ui/src/locale';
+// import fecha from 'element-ui/src/utils/date';
+// import { t } from 'element-ui/src/locale';
+
+import fecha from '../utils/date';
+import { t } from '../locale';
 
 const weeks = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
