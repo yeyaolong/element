@@ -1,4 +1,5 @@
 
+# 基于element-ui 改为自己的组件库
 
 1、修改build/config.js 中的 element-ui 为 '@yeylcom/element-ui'
 
@@ -13,8 +14,9 @@
 4、修改package.json中的版本号version 和 name
 
 5、执行语句
-npm run deploy:build
+npm install
 npm run dist
+npm login
 npm publish
 
 6、在需要的项目里执行
